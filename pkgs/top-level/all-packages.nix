@@ -9892,6 +9892,8 @@ with pkgs;
 
   reuse = callPackage ../tools/package-management/reuse { };
 
+  realmd = callPackage ../os-specific/linux/realmd { };
+
   inherit (nodePackages) reveal-md;
 
   rewritefs = callPackage ../os-specific/linux/rewritefs { };
